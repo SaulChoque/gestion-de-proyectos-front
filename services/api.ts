@@ -27,7 +27,6 @@ async function clientFetch<T>(endpoint: string, options?: RequestInit): Promise<
 }
 
 // Objeto con los métodos HTTP listos para usar en tus características
-// Objeto con los métodos HTTP listos para usar en tus características
 export const api = {
   get: <T>(endpoint: string) => clientFetch<T>(endpoint, { method: "GET" }),
   
